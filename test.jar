@@ -1,0 +1,10 @@
+<target name="executar" depends="empacotar">
+  <java classname="br.com.caelum.argentum.ui.ArgentumUI" fork="true">
+    <classpath>
+      <filelist files="jar/argentum.jar"/>
+      <fileset dir="lib">
+        <include name="*.jar" />
+      </fileset>
+    </classpath>
+  </java>
+</target>
